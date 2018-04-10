@@ -15,7 +15,7 @@ def generate_buzz():
     page += "</head><body><div class='container'><div class='animate one'><span>"
     page += generator.generate_buzz()
     page += "</span></div></div><div class ='container'>"
-    page += "Version: 1.0"
+    page += "Version: 2.0"
     page += "</div></body></html>"
     return page
 
