@@ -11,11 +11,11 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 @app.route("/")
 def generate_buzz():
     page = "<html><head>"
-    page += "<link rel='stylesheet' href={{ url_for('static' filename='static/styles/app.css') }}/>"
+    page += "<link rel='stylesheet' href='static/styles/app.css') />"
     page += "</head><body><div class='container'><div class='animate one'><span>"
     page += generator.generate_buzz()
     page += "</span></div></div><div class ='container'>"
-    page += "Version: 3.0"
+    page += "Version: 2.0"
     page += "</div></body></html>"
     return page
 
